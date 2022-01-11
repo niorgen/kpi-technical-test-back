@@ -20,8 +20,8 @@ from rest_framework import routers
 from investment import views
 
 router = routers.DefaultRouter()
-router.register(r'/api/investment',views.InvestmentViewSet,basename="Investment")
-router.register(r'/api/investment-state',views.InvestmentStateViewSet,basename="InvestmentState")
+router.register(r'api/investment',views.InvestmentViewSet,basename="Investment")
+router.register(r'api/investment-state',views.InvestmentStateViewSet,basename="InvestmentState")
 
 
 urlpatterns = [
