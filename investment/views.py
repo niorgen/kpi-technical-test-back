@@ -15,7 +15,7 @@ def home(request):
 class InvestmentViewSet(viewsets.ModelViewSet):
     queryset = Investment.objects.all()
     serializer_class = InvestmentSerializer
-    permission_classes= (IsAuthenticated,)
+    #permission_classes= (IsAuthenticated,)
     filterset_fields = ['ville','etat_d_avancement']
 
 
@@ -23,7 +23,7 @@ class InvestmentViewSet(viewsets.ModelViewSet):
 class InvestmentStateViewSet(viewsets.ModelViewSet):
     queryset = InvestmentState.objects.all()
     serializer_class = InvestmentStateSerializer
-    permission_classes= (IsAuthenticated,)
+    #permission_classes= (IsAuthenticated,)
 
 
     
