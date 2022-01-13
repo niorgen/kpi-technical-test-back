@@ -10,7 +10,7 @@ class Investment(models.Model):
     mandataire = models.CharField(max_length=50,null=True,default='')
     ppi= models.CharField(max_length=15,null=True,default='')
     lycee=models.CharField(max_length=50,null=True,default='')
-    notification_du_marche= models.DateField(null=True,default='')
+    notification_du_marche= models.DateField(null=True)
     codeuai=models.CharField(max_length=15,null=True,default='')
     longitude=models.FloatField(null=True,default='')
     latitude=models.FloatField(null=True,default='')
