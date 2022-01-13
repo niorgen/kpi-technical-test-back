@@ -17,7 +17,7 @@ class Investment(models.Model):
     etat_d_avancement=models.ForeignKey('InvestmentState',null=True, on_delete=models.DO_NOTHING)
     montant_des_ap_votes_en_meu=models.FloatField(null=True)
     cao_attribution=models.DateField(null=True)
-    maitrise_d_oeuvre=models.CharField(max_length=50,null=True,default='')
+    maitrise_d_oeuvre=models.CharField(max_length=255,null=True,default='')
     mode_de_devolution = models.CharField(max_length=50,null=True,default='')
     annee_d_individualisation=models.DateField(null=True)
     enveloppe_prev_en_meu=models.FloatField(null=True)
