@@ -3,7 +3,7 @@ from django.db import models
 
 
 class Investment(models.Model):
-
+    id= models.IntegerField(primary_key=True,null=False)
     titreoperation = models.CharField(max_length=255)
     entreprise = models.CharField(max_length=100)
     annee_de_livraison = models.CharField(max_length=15)
@@ -27,6 +27,7 @@ class Investment(models.Model):
 
     
 class InvestmentState(models.Model):
+    id= models.IntegerField(primary_key=True,null=False)
     name=models.CharField(max_length=50)
 
 
