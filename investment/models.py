@@ -11,7 +11,7 @@ class Investment(models.Model):
     ppi= models.CharField(max_length=15,null=True,default='')
     lycee=models.CharField(max_length=50,null=True,default='')
     notification_du_marche= models.DateField(null=True)
-    codeuai=models.CharField(max_length=15,null=True,default='')
+    codeuai=models.CharField(max_length=50,null=True,default='')
     longitude=models.FloatField(null=True,default='')
     latitude=models.FloatField(null=True,default='')
     etat_d_avancement=models.ForeignKey('InvestmentState',null=True, on_delete=models.DO_NOTHING)
